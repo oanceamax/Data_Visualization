@@ -1,0 +1,17 @@
+from matplotlib import pyplot as plt
+
+x = range(2009,2019)
+y1 = [-31.4,	-10.7,	-4.1,	-17.5,	-16.5,	4.7,	1.4,	16.4,	9.9,14.4]
+y2 = [-49.7,	0.2,	-10.6,	19.1,	0.3,	29.1,	30.2,	22,	44.8,-13.8]
+
+plt.plot(x,y1,color ='pink',marker='o')
+plt.plot(x,y2,color = 'gray',marker='o')
+plt.title('Houseing Permits change in EU')
+plt.xlabel('Years')
+plt.ylabel('Percent change YOY')
+plt.legend(['Avrg 28-EU housing permits',"Romanian houseing permints"],loc=4)
+#plt.figure(figsize=(4,4))
+plt.savefig('houseing_permits_detla_2009_2018.png')
+plt.show()
+
+#data source EUROSTAT - 22MAR2019
